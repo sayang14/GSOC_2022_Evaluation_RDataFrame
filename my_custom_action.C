@@ -10,7 +10,6 @@ using Result_t = T;
 
 private:
    std::vector<T> fSums;
-   //T fSums;
    int fnslots;
    std::shared_ptr<T> fResultSum;
    
@@ -55,7 +54,6 @@ public:
          onetosum(fSums[i],sum);
          *fResultSum = fSums[i];
       }
-      //*fResultSum = sum;
    }
    
    std::string GetActionName(){
@@ -67,12 +65,8 @@ void my_custom_action() {
    ROOT::EnableImplicitMT(2);
    ROOT::RDataFrame d(128);
    
-   //double n;
-   //std::cout << "Enter the ratio for the infinte sum should be within (-1,1): " << std::endl;
-   //std::cin>>n;
    auto input = []() { return gRandom->Uniform(-1, 1); };
  
-   //auto dd = d.Define("x", "(rdfentry_ %2 == 0) ? 0.5 : -0.6");
    auto dd = d.Define("x",input);
    
    auto ptr = std::make_shared<double>();
@@ -82,12 +76,9 @@ void my_custom_action() {
    
    if(input!=0){auto Result = dd.Book<double>(std::move(helper), {"x"});
    resultPtr = Result;}
-   //auto plain  = dd.Sum<int>({"x"});
    
    std::cout << "The final sum is :"<< *resultPtr << " " << std::endl;
    
-   //auto d1 = dd.Display("");
-   //d1->Print();
 }
 
 

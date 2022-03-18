@@ -1,3 +1,24 @@
+//Implementing Infinte sum custom action starting from 1. 
+// Sum of Infinite GP When |r| < 1
+// Let us derive a formula for the same. Consider a GP whose first term is 'a' and the common ratio is 'r' where |r| < 1. Then the sum of its infinite terms is:
+// S = a + ar + ar2 + ar3 + ...___ (1)
+// Multiply both sides by 'r':
+
+// rS = ar + ar2 + ar3 + ...___ (2)
+
+// Subtracting (2) from (1):
+
+// S - rS = a
+
+// S (1 - r) = a
+
+// Dividing both sides by (1 - r),
+
+// S = a / (1 - r)
+// This is the formula for infinite GP when r is less than 1.
+//In this program a = 1;
+//So S = 1 / (1 - r)  when |r| < 1 and r shouldn't be 0.
+
 #include <ROOT/RDataFrame.hxx>
 #include <memory>
  

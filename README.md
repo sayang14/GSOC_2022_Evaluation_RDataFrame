@@ -1,2 +1,9 @@
 # GSOC_2022_Evaluation_RDataFrame
 Interactive Debugging Experience For RDataFrame: 1st Evaluation Task
+
+After running the file my_custom_action.C like this:
+
+sayang@DESKTOP-IFS80HM:~/root_src/tutorials/dataframe$ gedit my_custom_action.C
+
+It shows the following :
+![image](https://user-images.githubusercontent.com/77008026/159057251-770b423a-aa70-42b4-9bff-c846b34e35d5.png)

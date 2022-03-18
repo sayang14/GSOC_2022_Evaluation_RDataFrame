@@ -37,7 +37,6 @@ private:
    void onetosum(const T &x, T &sum) {
       T y = 1-x;   
       sum = 1/y;
-      //sum = (x*(x+1)) / 2;
    }
    
 public:

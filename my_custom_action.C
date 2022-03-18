@@ -52,8 +52,9 @@ public:
       T sum(0);
       for (int i = 0; i < fnslots; ++i) {
          onetosum(fSums[i],sum);
-         *fResultSum = fSums[i];
+         //*fResultSum = fSums[i];
       }
+      *fResultSum = fSums[fnslots-1];
    }
    
    std::string GetActionName(){

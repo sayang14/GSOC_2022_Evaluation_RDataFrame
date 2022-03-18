@@ -17,7 +17,7 @@
 // S = a / (1 - r)
 // This is the formula for infinite GP when r is less than 1.
 //In this program a = 1;
-//So S = 1 / (1 - r)  when |r| < 1 and r shouldn't be 0.
+//So S = 1 / (1 - r)  when |r| < 1.
 
 #include <ROOT/RDataFrame.hxx>
 #include <memory>

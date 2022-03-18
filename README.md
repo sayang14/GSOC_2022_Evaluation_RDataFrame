@@ -1,4 +1,4 @@
-# GSOC_2022_Evaluation_RDataFrame
+# GSOC_2022_Evaluation_Custom_RDataFrame_Action
 Interactive Debugging Experience For RDataFrame: 1st Evaluation Task
 
 After running the file my_custom_action.C like this:

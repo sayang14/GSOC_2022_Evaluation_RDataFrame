@@ -93,12 +93,9 @@ void my_custom_action() {
    auto ptr = std::make_shared<double>();
    InfiniteSum<double> helper(ptr);
    
-   ROOT::RDF::RResultPtr<double> resultPtr;
+   auto Result = dd.Book<double>(std::move(helper), {"x"});
    
-   if(input!=0){auto Result = dd.Book<double>(std::move(helper), {"x"});
-   resultPtr = Result;}
-   
-   std::cout << "The final sum is :"<< *resultPtr << " " << std::endl;
+   std::cout << "The final sum is :"<< *Result << " " << std::endl;
    
 }
 

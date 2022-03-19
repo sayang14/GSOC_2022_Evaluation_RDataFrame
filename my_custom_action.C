@@ -1,4 +1,4 @@
-//Implementing Infinte sum custom action starting from 1. 
+//Implementing Infinte sum Custom RDataFrame action starting from 1. 
 // Sum of Infinite GP When |r| < 1
 // Let us derive a formula for the same. Consider a GP whose first term is 'a' and the common ratio is 'r' where |r| < 1. Then the sum of its infinite terms is:
 // S = a + ar + ar2 + ar3 + ...___ (1)

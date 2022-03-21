@@ -95,7 +95,7 @@ void my_custom_action() {
    
    auto Result = dd.Book<double>(std::move(helper), {"x"});
    
-   std::cout<<"Press Enter to continue.. <<std::endl;
+   std::cout<<"Press Enter to continue.. "<<std::endl;
    std::cin.ignore();
    std::cout << "The final sum is :"<< *Result << " " << std::endl;
    
